@@ -14,12 +14,15 @@
     </a>
 </div>
 
-
 <div align="center">
     <sub>Inspired by <a href="https://github.com/dankgrinder/dankgrinder">this</a> repository. This is a WIP and there will be more functions added in the future.</sub>
 </div>
 
 ## What is Grank?
+<div align="center">
+    <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.png" alt="Cover image">
+</div>
+
 Grank is a feature-rich script that automatically grinds Dank Memer for you.
 
 ## Supported commands (more to be added in the future).
