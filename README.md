@@ -31,7 +31,7 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you.
 ## Getting Started.
 
 ### Setting up the environment.
-- Install [Python](https://www.python.org/). 
+- Install [Python](https://www.python.org/). Make sure to have the ```Install Pip``` option ticked.
 - Download this repository by clicking [this](https://github.com/didlly/grank/archive/refs/heads/main.zip) link. 
 - Extract the files, and open a command prompt window in ```/src/```.
 - Run ```pip install -r requirements.txt```
