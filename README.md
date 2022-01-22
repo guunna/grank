@@ -6,8 +6,11 @@
 <div align="center">
     <a href="https://github.com/didlly">
     <img src="https://img.shields.io/github/license/didlly/grank">
-    <img src="https://img.shields.io/github/downloads/didlly/grank/total">
-    <img src="https://github.com/didlly/grank/actions/workflows/pages/pages-build-deployment/badge.svg">
+    <img src="https://img.shields.io/github/languages/top/didlly/grank">
+    <img src="https://img.shields.io/bitbucket/issues-raw/didlly/grank">
+    </a>
+    <a href="https://didlly.github.io/grank">
+    <img src="https://img.shields.io/website?down_color=lightgrey&down_message=Offline&up_color=blue&up_message=Online&url=https%3A%2F%2Fdidlly.github.io%2Fgrank%2F">
     </a>
 </div>
 
