@@ -1,0 +1,9 @@
+commands:
+  beg: True
+  fish: True
+  hunt: True
+  dig: True
+
+cooldowns:
+  commands: 1
+  loop: 41
