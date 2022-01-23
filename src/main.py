@@ -30,7 +30,8 @@ commands_cooldown = cooldowns["commands"]
 loop_cooldown = cooldowns["loop"]
 
 while True:
-    print("\n")
+    print("")
+    
     if commands["beg"]:
         beg(log, token, channel_id)
         sleep(commands_cooldown)
