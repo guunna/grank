@@ -47,7 +47,7 @@ To use Grank, you will have to provide your Discord token and a channel ID. Don'
 
 - [Useful article on how to get a channel ID.](https://docs.statbot.net/docs/faq/general/how-find-id/)
 
-You are now ready to use the program. Run ```src/main.py``` to start the program.
+You are now ready to use the program. Run ```src/main.py``` to start the program. You do not have to be have Discord open to run the program, so you can have the program running in the background while you do other things!
 
 ## Config file
 The ```config.yml``` file is used to change the way the program runs.
