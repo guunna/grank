@@ -3,7 +3,8 @@ commands:
   fish: True
   hunt: True
   dig: True
+  search: True
 
 cooldowns:
   commands: 1
-  loop: 41
+  timeout: 5
