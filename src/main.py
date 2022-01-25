@@ -28,27 +28,27 @@ while True:
     print("")
     
     if config["commands"]["beg"]:
-        beg(log, token, channel_id)
+        beg(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"])
     
     if config["commands"]["dig"]:
-        dig(log, token, channel_id)
+        dig(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"])    
 
     if config["commands"]["fish"]:
-        fish(log, token, channel_id)
+        fish(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"]) 
 
     if config["commands"]["hunt"]:
-        hunt(log, token, channel_id)
+        hunt(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"]) 
       
     if config["commands"]["search"]:
-        search(log, token, channel_id, config["cooldowns"]["timeout"])
+        search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
     
     register(log, "DEBUG", "Beginning cooldown between command loop.")
     sleep(45)

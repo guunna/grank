@@ -36,7 +36,7 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you.
 ## Getting Started.
 
 ### Setting up the environment.
-When the majority of Dank Memer commands are supported, compiled versions of the code will be made available. However, since ```v1``` has not been acheived yet, you will have to have Python  installed to run Grank.
+When the majority of Dank Memer commands are supported, compiled versions of the code will be made available. However, since ```v1``` has not been acheived yet, you will have to have Python installed to run Grank.
 
 - Install [Python](https://www.python.org/) (Grank has been tested on Python version ```3.10.0 64-Bit```). Make sure to have the ```Install Pip``` option ticked.
 - Download this repository by clicking [this](https://github.com/didlly/grank/archive/refs/heads/main.zip) link. 
@@ -51,7 +51,7 @@ To use Grank, you will have to provide your Discord token and a channel ID. Don'
 
 - [Useful article on how to get a channel ID.](https://docs.statbot.net/docs/faq/general/how-find-id/)
 
-You are now ready to use the program. Run ```src/main.py``` to start the program. You do not have to be have Discord open to run the program, so you can have the program running in the background while you do other things!
+You are now ready to use the program. Run ```src/main.py``` to start the program. You do not have to have Discord open to run the program, so you can have the program running in the background while you do other things!
 
 ## Config file
 The ```config.yml``` file is used to change the way the program runs.
@@ -73,7 +73,17 @@ Values in the ```cooldowns``` category tell the program the cooldowns between co
 | Name  | Type | Default Value | Description |
 | ------------- | ------------- | ------------- | ------------- |
 | ```commands```  | ```Integer``` | ```1```  | Cooldown between commands. |
-| ```timeout```  | ```Integer``` | ```5```  | Timeout for waiting for responses from Dank Memer to commands that require user interaction (like ```pls search```).
+| ```timeout```  | ```Integer``` | ```5```  | Timeout for waiting for responses from Dank Memer to commands that require user interaction (like ```pls search```). |
+
+### ```logging``` category.
+Values in the ```logging``` category tell the program whether or not to log ```debug``` and ```warning``` messages. We would recommend having *at least* ```warning``` set to ```True```. Fatal errors will be logged regardless of the configuration.
+
+| Name  | Type | Default Value | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| ```debug```  | ```Boolean``` | ```True```  | Tells the program whether or not to log ```debug``` messages. |
+| ```warning```  | ```Boolean``` | ```True```  | Tells the program whether or not to log ```warning``` messages. |
+
+***NOTE***: Values in the ```logging``` category do not affect logging messages sent when the configuration file is being loaded and the token is being verified.
 
 ## Disclaimer
 This is a self-bot. Self-bots are against Discord's TOS. Automation of Dank Memer commands also breaks Dank Memer's rules. By using this program you acknowledge that I can take no responsibility for actions taken against you if you are caught.

@@ -8,3 +8,7 @@ commands:
 cooldowns:
   commands: 1
   timeout: 5
+
+logging:
+  debug: False
+  warning: True
