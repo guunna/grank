@@ -9,7 +9,8 @@ from scripts.fish import fish
 from scripts.hunt import hunt
 from scripts.search import search
 from scripts.highlow import highlow
-from time import sleep
+from scripts.postmeme import postmeme
+from time import time, sleep
 from utils.logger import register
 
 if getattr(sys, "frozen", False):
@@ -27,6 +28,8 @@ channel_id = credentials["channel_id"]
 
 while True:
     print("")
+    
+    start = time()
     
     if config["commands"]["beg"]:
         beg(log, token, channel_id, config["logging"])
@@ -56,5 +59,14 @@ while True:
     if config["commands"]["highlow"]:
         highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
     
-    register(log, "DEBUG", "Beginning cooldown between command loop.")
-    sleep(39 - (config["cooldowns"]["commands"] * 5))
+    sleep(config["cooldowns"]["commands"])
+    
+    if config["commands"]["postmeme"]:
+        postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd)
+    
+    end = time()
+    
+    cooldown = end - start
+    
+    register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
+    sleep(cooldown)

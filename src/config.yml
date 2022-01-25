@@ -5,11 +5,13 @@ commands:
   dig: True
   search: True
   highlow: True
-
+  postmeme: True
+  auto_buy: True
+  
 cooldowns:
   commands: 1
   timeout: 5
 
 logging:
-  debug: False
+  debug: True
   warning: True

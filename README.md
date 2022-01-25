@@ -23,6 +23,7 @@
 
 * [What is Grank?](https://github.com/didlly/grank#what-is-grank)
 * [Supported commands.](https://github.com/didlly/grank#getting-started)
+* [Features.](https://github.com/didlly/grank#features)
 * [Getting started.](https://github.com/didlly/grank#supported-commands-more-to-be-added-in-the-future)
 	* [Setting up the environment.](https://github.com/didlly/grank#setting-up-the-environment)
 	* [Getting your Discord token and channel ID.](https://github.com/didlly/grank#getting-your-discord-token-and-channel-id)
@@ -37,7 +38,12 @@
     <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.png" alt="Cover image">
 </div>
 
-Grank is a feature-rich script that automatically grinds Dank Memer for you.
+Grank is a feature-rich script that automatically grinds Dank Memer for you. It is based on [dankgrinder](https://github.com/dankgrinder/dankgrinder). Since it has been discontinued and the [recommended fork](https://github.com/V4NSH4J/dankgrinder) has also been discontinued, I decided to make my own version from scratch in Python.
+
+## Features
+- Free
+- Efficiently coded.
+- Smart - if the user doesn't have a required item to run a command like ```pls pm```, it will buy the required item so long as there are sufficient funds in the user's wallet & bank.
 
 ## Supported commands (more to be added in the future).
 - ```pls beg```
@@ -46,6 +52,7 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you.
 - ```pls hunt```
 - ```pls search```
 - ```pls highlow```
+- ```pls postmeme```
 
 ## Getting Started.
 
@@ -75,13 +82,14 @@ Values in the ```commands``` category tell the program whether or not to run cer
 
 | Name  | Type | Default Value | Description | 
 | ------------- | ------------- | ------------- | ------------- |
-| ```beg```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls beg```. |
-| ```dig```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls dig```. |
-| ```fish```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls fish```. |
-| ```hunt```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls hunt```. |
-| ```search```  | ```Boolean``` | ```True```  | Tell the program whether or 
-not to run the command ```pls search```. |
-| ```highlow```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls highlow```. |
+| ```beg```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls beg```. |
+| ```dig```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls dig```. |
+| ```fish```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls fish```. |
+| ```hunt```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls hunt```. |
+| ```search```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls search```. |
+| ```highlow```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls highlow```. |
+| ```postmeme```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls postmeme```. |
+| ```auto_buy```  | ```Boolean``` | ```True```  | Tell the program whether or not to buy items  (like ```laptop```) needed to run commands if there are sufficient funds. |
 
 ### ```cooldowns``` category.
 Values in the ```cooldowns``` category tell the program the cooldowns between commands and the loop cooldown.

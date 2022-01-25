@@ -54,7 +54,7 @@ def highlow(log, token, channel_id, timeout, logging):
     
     request = post(f"https://discord.com/api/v9/interactions", headers={"authorization": token}, json=data)
     
-    if request.status_code == 200 or request.status_code == 204  and logging["debug"]:
+    if (request.status_code == 200 or request.status_code == 204) and logging["debug"]:
         register(log, "DEBUG", "Successfully interacted with button on Dank Memer's response to command `pls highlow`.")
     elif logging["warning"]:
         register(log, "WARNING", f"Failed to interact with button on Dank Memer's response to command `pls highlow`. Status code: {request.status_code} (expected 200 or 204).")
