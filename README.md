@@ -19,6 +19,19 @@
     <sub>Inspired by <a href="https://github.com/dankgrinder/dankgrinder">this</a> repository. This is a WIP and there will be more functions added in the future. Special thanks to <a href="https://github.com/V4NSH4J">V4NSH4J </a> for helping me solve lots of the problems I encountered.</sub>
 </div>
 
+## Contents
+
+* [What is Grank](https://github.com/didlly/grank#what-is-grank)
+* [Supported commands.](https://github.com/didlly/grank#getting-started)
+* [Getting started.](https://github.com/didlly/grank#supported-commands-more-to-be-added-in-the-future)
+	* [Setting up the environment.](https://github.com/didlly/grank#setting-up-the-environment)
+	* [Getting your Discord token and channel ID.](https://github.com/didlly/grank#getting-your-discord-token-and-channel-id)
+* [Config file.](https://github.com/didlly/grank#config-file)
+	* [```commands``` category](https://github.com/didlly/grank#commands-category)
+	* [```cooldowns``` category](https://github.com/didlly/grank#cooldowns-category)
+	* [```logging``` category](https://github.com/didlly/grank#logging-category)
+* [Disclaimer](https://github.com/didlly/grank#disclaimer)
+
 ## What is Grank?
 <div align="center">
     <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.png" alt="Cover image">
