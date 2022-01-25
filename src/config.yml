@@ -4,6 +4,7 @@ commands:
   hunt: True
   dig: True
   search: True
+  highlow: True
 
 cooldowns:
   commands: 1

@@ -8,6 +8,7 @@ from scripts.dig import dig
 from scripts.fish import fish
 from scripts.hunt import hunt
 from scripts.search import search
+from scripts.highlow import highlow
 from time import sleep
 from utils.logger import register
 
@@ -50,5 +51,10 @@ while True:
     if config["commands"]["search"]:
         search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
     
+    sleep(config["cooldowns"]["commands"])
+       
+    if config["commands"]["highlow"]:
+        highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+    
     register(log, "DEBUG", "Beginning cooldown between command loop.")
-    sleep(45)
+    sleep(39 - (config["cooldowns"]["commands"] * 5))

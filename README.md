@@ -45,6 +45,7 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you.
 - ```pls fish```
 - ```pls hunt```
 - ```pls search```
+- ```pls highlow```
 
 ## Getting Started.
 
@@ -78,7 +79,9 @@ Values in the ```commands``` category tell the program whether or not to run cer
 | ```dig```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls dig```. |
 | ```fish```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls fish```. |
 | ```hunt```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls hunt```. |
-| ```search```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls search```. |
+| ```search```  | ```Boolean``` | ```True```  | Tell the program whether or 
+not to run the command ```pls search```. |
+| ```highlow```  | ```Boolean``` | ```True```  | Tell the program whether or not to run the command ```pls highlow```. |
 
 ### ```cooldowns``` category.
 Values in the ```cooldowns``` category tell the program the cooldowns between commands and the loop cooldown.
