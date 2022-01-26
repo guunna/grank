@@ -45,6 +45,7 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you. It 
 - Smart - if the user doesn't have a required item to run a command like ```pls pm```, it will buy the required item so long as there are sufficient funds in the user's wallet & bank.
 
 ## Supported commands (more to be added in the future).
+- ```pls daily```
 - ```pls beg```
 - ```pls dig```
 - ```pls fish```
@@ -81,6 +82,7 @@ Values in the ```commands``` category tell the program whether or not to run cer
 
 | Name  | Type | Default Value | Description | 
 | ------------- | ------------- | ------------- | ------------- |
+| ```daily```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls daily```. |
 | ```beg```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls beg```. |
 | ```dig```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls dig```. |
 | ```fish```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls fish```. |

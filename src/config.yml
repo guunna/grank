@@ -1,4 +1,5 @@
 commands:
+  daily: True
   beg: True
   fish: True
   hunt: True

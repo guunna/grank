@@ -3,6 +3,7 @@ from os.path import dirname
 from utils.logger import initialize_logger
 from utils.configuration.verify_configuration import verify_configuration
 from utils.configuration.verify_credentials import verify_credentials
+from scripts.daily import daily
 from scripts.beg import beg
 from scripts.dig import dig
 from scripts.fish import fish
@@ -30,6 +31,11 @@ while True:
     print("")
     
     start = time()
+    
+    if config["commands"]["daily"]:
+        daily(log, token, channel_id, config["logging"], cwd)
+    
+    sleep(config["cooldowns"]["commands"])
     
     if config["commands"]["beg"]:
         beg(log, token, channel_id, config["logging"])
@@ -66,7 +72,9 @@ while True:
     
     end = time()
     
-    cooldown = end - start
+    cooldown = 45 - (end - start)
     
-    register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
+    if config["debug"]:
+        register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
+        
     sleep(cooldown)
