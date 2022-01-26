@@ -1,3 +1,4 @@
+from math import e
 from requests import post, get
 from utils.logger import register
 from time import sleep
@@ -28,7 +29,7 @@ def buy(log, token, channel_id, timeout, logging, item, cwd):
         latest_message = loads(request.text)[0]
         
         if latest_message["author"]["id"] == "270904126974590976" and logging["debug"]:
-            register(log, "DEBUG", "Got Dank Memer's response to command `pls buy`.")
+            register(log, "DEBUG", f"Got Dank Memer's response to command `pls buy {item}`.")
             break
         else:
             continue
@@ -48,8 +49,20 @@ def buy(log, token, channel_id, timeout, logging, item, cwd):
     
             data = load(f"{cwd}/data.json")
             
-            if (int(latest_message["embeds"][0]["description"].split(":")[-1].split(" / ")[0].repalce("⏣", "")) - (data[f"{item}_price"] - int(latest_message["embeds"][0]["description"].split("\n")[0].split("⏣")[-1]))) > 0:
-                amount = int(latest_message["embeds"][0]["description"].split(":")[-1].split(" / ")[0].repalce("⏣", "")) - (data[f"{item}_price"] - int(latest_message["embeds"][0]["description"].split("\n")[0].split("⏣")[-1]))
+            bank = int(latest_message["embeds"][0]["description"].split(":")[-1].split(" / ")[0].repalce("⏣", ""))
+            wallet = int(latest_message["embeds"][0]["description"].split("\n")[0].split("⏣")[-1])
+            
+            if wallet - data[item] > 0:
+                request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": f"pls buy {item}"})
+    
+                if request.status_code != 200 and logging["warning"]:
+                    register(log, "WARNING", f"Failed to send command `pls buy {item}`. Status code: {request.status_code} (expected 200).")
+                    return
+                
+                if logging["debug"]:
+                    register(log, "DEBUG", f"Successfully sent command `pls buy {item}`.")
+            elif (wallet + bank) - data["item"] > 0:
+                amount = (wallet + bank) - data["item"]
                 
                 request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": f"pls with {amount}"})
     
@@ -64,12 +77,11 @@ def buy(log, token, channel_id, timeout, logging, item, cwd):
     
                 if request.status_code != 200 and logging["warning"]:
                     register(log, "WARNING", f"Failed to send command `pls buy {item}`. Status code: {request.status_code} (expected 200).")
-                    return
                 
                 if logging["debug"]:
                     register(log, "DEBUG", f"Successfully sent command `pls buy {item}`.")
-            elif logging["WARNING"]:
-                register(log, "WARNING", f"Not enough funds to buy a {item}")
+            elif logging["warning"]:
+                register(log, "WARNING", f"Insufficient funds to buy a {item}")
                    
     elif latest_message["embeds"][0]["author"]["name"].lower() == f"successful {item} purchase" and logging["debug"]:
         register(log, "DEBUG", f"Successfully bought {item}.")

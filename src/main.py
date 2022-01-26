@@ -62,7 +62,7 @@ while True:
     sleep(config["cooldowns"]["commands"])
     
     if config["commands"]["postmeme"]:
-        postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd)
+        postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config)
     
     end = time()
     
