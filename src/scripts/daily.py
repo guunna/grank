@@ -16,9 +16,10 @@ def daily(log, token, channel_id, logging, cwd):
         if logging["debug"]:
             register(log, "DEBUG", "Successfully sent command `pls daily`.")
         
-        data["daily"] == datetime.now().strftime("%x-%X")
-           
-        open(f"{cwd}/data.json", "w").write(dumps(data))
+        data["daily"] = datetime.now().strftime("%x-%X")
+
+        with open(f"{cwd}/data.json", "w") as data_file:
+            data_file.write(dumps(data))
         
         if logging["debug"]:
             register(log, "DEBUG", "Successfully updated latest command run of `pls daily`.")
@@ -32,9 +33,10 @@ def daily(log, token, channel_id, logging, cwd):
         if logging["debug"]:
             register(log, "DEBUG", "Successfully sent command `pls daily`.")
         
-        data["daily"] == datetime.now().strftime("%x-%X")
+        data["daily"] = datetime.now().strftime("%x-%X")
            
-        open(f"{cwd}/data.json", "w").write(dumps(data))
+        with open(f"{cwd}/data.json", "w") as data_file:
+            data_file.write(dumps(data))
         
         if logging["debug"]:
             register(log, "DEBUG", "Successfully updated latest command run of `pls daily`.") 
