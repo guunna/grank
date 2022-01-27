@@ -1,10 +1,10 @@
-from json import load
+from json import load, dumps
 from requests import post
 from utils.logger import register
 from datetime import datetime
 
 def daily(log, token, channel_id, logging, cwd):
-    data = load(f"{cwd}/data.json") 
+    data = load(open(f"{cwd}/data.json", "r"))
     
     if data["daily"] == "None":
         request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls daily"})
@@ -18,7 +18,7 @@ def daily(log, token, channel_id, logging, cwd):
         
         data["daily"] == datetime.now().strftime("%x-%X")
            
-        open(f"{cwd}/data.json", "w").write(data)
+        open(f"{cwd}/data.json", "w").write(dumps(data))
         
         if logging["debug"]:
             register(log, "DEBUG", "Successfully updated latest command run of `pls daily`.")
@@ -34,7 +34,7 @@ def daily(log, token, channel_id, logging, cwd):
         
         data["daily"] == datetime.now().strftime("%x-%X")
            
-        open(f"{cwd}/data.json", "w").write(data)
+        open(f"{cwd}/data.json", "w").write(dumps(data))
         
         if logging["debug"]:
             register(log, "DEBUG", "Successfully updated latest command run of `pls daily`.") 
