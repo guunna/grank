@@ -21,7 +21,7 @@
 ## Contents
 
 * [What is Grank?](https://github.com/didlly/grank#what-is-grank)
-* * [Features.](https://github.com/didlly/grank#features)
+* [Features.](https://github.com/didlly/grank#features)
 * [Supported commands.](https://github.com/didlly/grank#getting-started)
 * [Getting started.](https://github.com/didlly/grank#supported-commands-more-to-be-added-in-the-future)
 	* [Setting up the environment.](https://github.com/didlly/grank#setting-up-the-environment)
