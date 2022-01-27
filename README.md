@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Grank</h1>
-    <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/logo.png" alt="Not Copyrighted by me - some random dudes work">
+    <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/logo.jpg" alt="Not Copyrighted by me - some random dudes work">
 </div>
 
 <div align="center">
