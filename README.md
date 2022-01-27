@@ -1,6 +1,10 @@
 <div align="center">
     <h1>Grank</h1>
+<<<<<<< Updated upstream
     <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/logo.jpg" alt="Not Copyrighted by me - some random dudes work">
+=======
+    <img src="https://styles.redditmedia.com/t5_3ozad/styles/communityIcon_xvlhdypngrq61.png?width=256&s=d8079b417dde76bf9f6015d5dec902e0756e5c4f" alt="Dank Memer Logo">
+>>>>>>> Stashed changes
 </div>
 
 <div align="center">
