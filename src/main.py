@@ -14,6 +14,13 @@ from scripts.postmeme import postmeme
 from time import time, sleep
 from utils.logger import register
 
+try:
+    import ctypes
+    kernel32 = ctypes.windll.kernel32
+    kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+except Exception:
+    pass
+
 if getattr(sys, "frozen", False):
     cwd = dirname(sys.executable)
 elif __file__:
