@@ -21,16 +21,17 @@
 ## Contents
 
 * [What is Grank?](https://github.com/didlly/grank#what-is-grank)
-* [Features.](https://github.com/didlly/grank#features)
-* [Supported commands.](https://github.com/didlly/grank#getting-started)
-* [Getting started.](https://github.com/didlly/grank#supported-commands-more-to-be-added-in-the-future)
+* [Features](https://github.com/didlly/grank#features)
+* [Supported commands](https://github.com/didlly/grank#getting-started)
+* [Todo](https://github.com/didlly/grank#todo)
+* [Getting started](https://github.com/didlly/grank#supported-commands-more-to-be-added-in-the-future)
 	* [Setting up the environment.](https://github.com/didlly/grank#setting-up-the-environment)
 	* [Getting your Discord token and channel ID.](https://github.com/didlly/grank#getting-your-discord-token-and-channel-id)
-* [Config file.](https://github.com/didlly/grank#config-file)
+* [Config file](https://github.com/didlly/grank#config-file)
 	* [```commands``` category](https://github.com/didlly/grank#commands-category)
 	* [```cooldowns``` category](https://github.com/didlly/grank#cooldowns-category)
 	* [```logging``` category](https://github.com/didlly/grank#logging-category)
-* [Disclaimer.](https://github.com/didlly/grank#disclaimer)
+* [Disclaimer](https://github.com/didlly/grank#disclaimer)
 
 ## What is Grank?
 <div align="center">
@@ -44,7 +45,7 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you. It 
 - Efficiently coded.
 - Smart - if the user doesn't have a required item to run a command like ```pls pm```, it will buy the required item so long as there are sufficient funds in the user's wallet & bank.
 
-## Supported commands (more to be added in the future).
+## Supported commands
 - ```pls daily```
 - ```pls beg```
 - ```pls dig```
@@ -54,9 +55,13 @@ Grank is a feature-rich script that automatically grinds Dank Memer for you. It 
 - ```pls highlow```
 - ```pls postmeme```
 
-## Getting Started.
+## Todo
+- ```pls trivia```
+- ```pls stream```
 
-### Setting up the environment.
+## Getting Started
+
+### Setting up the environment
 When the majority of Dank Memer commands are supported, compiled versions of the code will be made available. However, since ```v1``` has not been acheived yet, you will have to have Python installed to run Grank.
 
 - Install [Python](https://www.python.org/) (Grank has been tested on Python version ```3.10.0 64-Bit```). Make sure to have the ```Install Pip``` option ticked.
@@ -64,10 +69,10 @@ When the majority of Dank Memer commands are supported, compiled versions of the
 - Extract the files, and open a command prompt window in ```/src/```.
 - Run ```pip install -r requirements.txt```
 
-### Getting your Discord token and channel ID.
+### Getting your Discord token and channel ID
 To use Grank, you will have to provide your Discord token and a channel ID. Don't worry - these details are never shared with anyone. It is best if only you and Dank Memer can send messages in the channel you get the ID of. This is to avoid confusion with other people's interactions.
 
-#### How do you get this information?
+#### How do you get this information
 - [Useful article on how to get your Discord token.](https://discordhelp.net/discord-token)
 
 - [Useful article on how to get a channel ID.](https://docs.statbot.net/docs/faq/general/how-find-id/)
@@ -77,7 +82,7 @@ You are now ready to use the program. Run ```src/main.py``` to start the program
 ## Config file
 The ```config.yml``` file is used to change the way the program runs.
 
-### ```commands``` category.
+### ```commands``` category
 Values in the ```commands``` category tell the program whether or not to run certain commands.
 
 | Name  | Type | Default Value | Description | 
@@ -92,7 +97,7 @@ Values in the ```commands``` category tell the program whether or not to run cer
 | ```postmeme```  | ```Boolean``` | ```True```  | Tells the program whether or not to run the command ```pls postmeme```. |
 | ```auto_buy```  | ```Boolean``` | ```True```  | Tell the program whether or not to buy items  (like ```laptop```) needed to run commands if there are sufficient funds. |
 
-### ```cooldowns``` category.
+### ```cooldowns``` category
 Values in the ```cooldowns``` category tell the program the cooldowns between commands and the loop cooldown.
 
 | Name  | Type | Default Value | Description |
@@ -100,7 +105,7 @@ Values in the ```cooldowns``` category tell the program the cooldowns between co
 | ```commands```  | ```Integer``` | ```1```  | Cooldown between commands. |
 | ```timeout```  | ```Integer``` | ```5```  | Timeout for waiting for responses from Dank Memer to commands that require user interaction (like ```pls search```). |
 
-### ```logging``` category.
+### ```logging``` category
 Values in the ```logging``` category tell the program whether or not to log ```debug``` and ```warning``` messages. We would recommend having *at least* ```warning``` set to ```True```. Fatal errors will be logged regardless of the configuration.
 
 | Name  | Type | Default Value | Description |
