@@ -65,7 +65,7 @@ while True:
     
     if config["commands"]["dig"]:
         try:
-            dig(log, token, channel_id, config["logging"])
+            dig(log, token, channel_id, config["logging"], config["cooldowns"]["timeout"], ID, config["commands"], cwd)
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls dig` command: `{sys.exc_info()}`")
     
@@ -74,7 +74,7 @@ while True:
 
     if config["commands"]["fish"]:
         try:
-            fish(log, token, channel_id, config["logging"])
+            fish(log, token, channel_id, config["logging"], config["cooldowns"]["timeout"], ID, config["commands"], cwd)
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls fish` command: `{sys.exc_info()}`")
     
@@ -83,7 +83,7 @@ while True:
 
     if config["commands"]["hunt"]:
         try:
-            hunt(log, token, channel_id, config["logging"])
+            hunt(log, token, channel_id, config["logging"], config["cooldowns"]["timeout"], ID, config["commands"], cwd)
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls hunt` command: `{sys.exc_info()}`")
     
