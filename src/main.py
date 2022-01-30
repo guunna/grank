@@ -39,8 +39,6 @@ del credentials
 while True:
     print("")
     
-    
-    
     if config["commands"]["daily"]:
         daily(log, token, channel_id, config["logging"], cwd)
     
@@ -83,7 +81,7 @@ while True:
     
     sleep(config["cooldowns"]["commands"])
     
-    v
+    
     if config["commands"]["postmeme"]:
         postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"])
     
