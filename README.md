@@ -1,6 +1,61 @@
 <div align="center">
     <h1>Grank</h1>
-    <img src="https://styles.redditmedia.com/t5_3ozad/styles/communityIcon_xvlhdypngrq61.png?width=256&s=d8079b417dde76bf9f6015d5dec902e0756e5c4f" alt="Dank Memer Logo">
+    
+                                           ;)ics*}II??I*sl%>/_                       -,^=^:-                                
+                                    ;)r?1ozjjjjjjjjjjjjj7e[Ir)+            .=<%r*?[1tt11[!}rv|`                          
+                                    :)*tjLjjjzzzzzzzzzzzzzzzjjLLje?l\-    ^<c*]azjLLjjjjjjjjjLLjo]r\                        
+                                =c1jLjzzzzzzzzzzzzzzzzzzzzzzzzzjjL7]r+%!tzLLjjzzzzzzzzzzzzzzzzjjL7I)                      
+                                ^leLjzzzzzzzzzzzzjjjjjjjjjjjjjjzzzzzjjLareLzzzzzzzzzzzzzzzzzzzzzzzzjL7c-                    
+                            `vtLjzzzzzzzzzzjjjzoa1[]]]]][[1teozjjjjzzjexajzzzzzzzzzzzzzzzzzzzzzzzzzjLs-                   
+                            /Ijjzzzzzzzzjjj7t]II?]1taeeeeat1[]?I?!1e7jjLtx7jjjjjjjjjjjjjjjjjjjjjjjjjjjLi                   
+                            )eLzzzzzzzzzze]II!tozjjjjjjjjjjjjjjjz7a1?II!tz{Izoeat11[]]!!!!!!!!!!!]taaaez[`                  
+                        `cjjzzzzzzzzzz?}1ojjjzzzzzzzzzzzzzzzzzzzjjjj7t!Ir)}??!!][11tttttttttttt[!!!?I}}iv</.              
+                        _sLjzzzzzzzzzzz7jjzzzzzzzzzzzzzzjjjjjjjjjjjjjjjLj7]*1zLLjjjjjjjjjjjjjjjjjjjjjjjjLjze]*%"           
+                        -{Lzzzzzzzzzzzzzzzzzzzzzzzzzzjjz7oet11[[]]!!!!!!!!!]!sxr17jjzzzzjjjjjjz7oeaaeeeeeeeo7zjjo?x=        
+                    .lLzzzzzzzzzzzzzzzzzzzzzzzjjjo[?I?![[[]]]]][[111ttaeeeet]?}Iejjz7et[!?III???????????IIIII?!]l'       
+                    .-ijjzzzzzzzzzzzzzzzzzzzjjjzo[I}1ooa[!??![11111[[[]!!????![te1i}I}}I?!][[]]!??!!!!!!????!!!!][1[!s"    
+                '<l}[i1jzzzzzzzzzzzzzzzzz77oa1?I?1ee[II!tozjjjjjjjjjjjjjjjjz7oe1!I*]!!???!][1teo7zjjjjjjjz77ooea1[!?!1*.   
+            /r[zLLoxzzzzzzzzzzzzzzzjjjt?!![tea1?I!t7jjjjzzzzzjjzzz7ooeaaattttaaaa![o7zjjjjjz7oeatteooeaae7zLLzoet1[!Ilv= 
+            veLjzzj?{jzzzzzzzzzzzzz7[]]]][[[?I?1ozjjjjjzzz77oeeo7zLnJ2mdEXXPGbYYYYPot7et11te7uJ36ddy1v"/|\v*jq8RW@&Gh3Lt< 
+            'sjjzzzzjl[jzzzzzzzzzzzzjIlataaeee7zzz77oeeattaoj#5FfLa?l%v%l]T4BQQQQQQQQ8*T3SXO@BRQQQQdx- szi      ^t8QQQQQ0$y=
+        ;ILzzzzzzz}ozzzzzzzzzzzzzzo???????!*tLun#w2mVPk$D0Dwv'\GG"       =zKQQQQQQdgQQQQQQQQQQQw.  .[5{  _+'   ^EQQQQQQQ{
+        ^]Lzzzzzzzzjzzzzzzzzzzzzzzzjjjzzzz7o]1fGWQQQQQQQQQ&<   `vc_  <uTi   |bQQQQX60QQQQQQQQQQY_    -   /bRE`   +KQQQNbJ\
+        =[LzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjotoyXK0QQQQQe     _"`  [@$e    "OkgT*6$DNR0QQQQQQf    /F)   ve%     TdFC['  
+        ^[Lzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzja*!eoeteu2dY$H*     )J=   __._,+\%[aeeIito7ju#w2pqV[__'':;;;=++/\vc{I1t?s%/   
+    ,!Lzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzo[I*}?[111tao]**{{{sr{*}}?[tozj7oeaIr?7jzz77ooeeaaeeoooo77zjjjLLLLLuoi;      
+    _}Lzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjz7a1!II}}I?!!!!!!!!!!!!!!!?**???1zjzzzzzzzzzzzzjjjjjjjjzzzzzjLLe{/        
+    .cLzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjjjz77oeeeeeeeeeoooe1I*ojjjjjzzzzzzjjjzzzzzzzzzzzzzjjjLjeIx+          
+    ^ojzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjjjjjjzot]?I?1ozzzzzzzzzj1I?[e7jjjzzzzzz77oetIci+             
+    ijzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjj7et]?I?]tozjjzzzzzzzzzzzz7e1?}cc{I????????![!c+              
+    {Lzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz7!II?[tozjjjzzzzzzzzzzzzzzzzzjjjzo1??7zzzzzjjjjjLo{/            
+    '1jzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz7e7zjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjzzzzzzzzzzzzjLoc'          
+    =ojzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjL?+         
+    |zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzLt=        
+    <jzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzLI_       
+    >jzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjz7oeeeeo77zjjjjjjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjj7=       
+    <jzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzj71?}}II???II}II?!]1taeo7zzjjjjjjjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjjzot!}%\`     
+    |zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjz?sI1eooooooooeeat1[]!?IIIIII?!][1aeo77zzjjjjjjjjjjjjjjjjjjjjjjjjjjzzoe1!I}}?[a7o\     
+    =ojzzzzzzzzzzzzzzzzzzzzzzzzzzzzz7r*eooeeeeeeeeeeeoooo7oooooeeat1[]!!?IIIIII?!!]][[[1[1111111111[[!!?I}II![teoooo71|     
+    '1jzzzzzzzzzzzzzzzzzzzzzzzzzzzzjr}7eeeea*{{{{{{{{{*}I?![1taeeoooo77oooooeeatt111[[[[]]]]]]]]]]][[1taeeooooooo7e?x^      
+    {Lzzzzzzzzzzzzzzzzzzzzzzzzzjzzz%[oooooooooooeeeeat1[!?I}*{{{{*}I?!][1ttaeeoooooooooooo7oo7ooooooooeeaat1[]!{v\-        
+    ijzzzzzzzzzzzzzzzzzzzzzzzz7ejzjtl?[11111[[[[1ttaeoooo77oooeeat1[]!?I}**{{{{{{{{***************{{{{{{{{**}I!?|          
+    =7jzzzzzzzzzzzzzzzzzzzzzzzzl[jjj71]!!!]]][[[!!?IIIII?!][1taeeoooo777oooooeeeeeaaattttttttttttaaaeeeeoooooo77v          
+    `v7jzzzzzzzzzzzzzzzzzzzzzzjo{IezjLLjjjjjjjjjjjjjz7oeat1]!?II}II??!][[[11111tttaaaaeeeeeeoooooooooo777777o1*>.          
+    \[jjjjzzzzzzzzzzzzzzzzzzzjjtI}?]1ezzzzzzzzzzzzzzzjjjjjjjjzz7oeat1[[]]]!!!!?????IIIIIIIIIIIIIII??r{{rl%<+             
+        ^*!1ozjjjjzzzzzzzzzzzzzzzzjj7et1ezzzzzzzzzzzzzzzzzzzzzzzzzzzjjjjjjjjjjjjjjjjjjjjzzzzzz7777zze}>`                    
+    ^)i<x{II}I]1e7jjjjjzzzzzzzzzzzzzjjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjLjo!l)                       
+    "rrlcvvc{?]!?I}?]1e7zjjjjjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjLLjo]*v"                          
+    "rlllllc%vvc*!tat[?I}}I![1ao77zjjjjjjjjjjjjzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzjjjjjjLj7e[Irv"`                             
+    "rlllllllllc%vv%rI1o77oe1]!II}}}I?!][1taeeoo7777zzzzzzzzzzzzzzzzzzzzzzz77oeet11[xi<"'                                  
+    "rllllllllllllllc%vv%l{?[to7zzz77oet1[]!!??IIIIII}}}}}}}}}}}}}}}}}}IIIII???Ic"vi:                                      
+    "rlllllllllllllllllllcx%vvv%%clr{}?![1taeeooo777777777zzzzzzzzz777ooet1]I{l%vlllli)^.                                  
+    "rlllllllllllllllllllllllllllcccxx%%%vvvvvvvv%%%%%%%%xxxxccccxxx%%%vvvvv%xcllllllrrli)^.                               
+    "rllllllllllllllllllllllllllllllllllllllllllllllllllllllllccllllllllllllllllllllllllrrli|:                             
+    "rlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllrrx|'                           
+    "rllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllr%^                          
+    "rlllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllrl+.                        
+    =i))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))i>_ 
+    
 </div>
 
 <div align="center">
