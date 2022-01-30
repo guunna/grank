@@ -4,7 +4,7 @@ from time import sleep
 from json import loads
 from random import choice
 
-def search(log, token, channel_id, timeout, logging):
+def search(log, token, channel_id, timeout, logging, ID):
     request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls search"})
     
     if request.status_code != 200:
@@ -29,13 +29,13 @@ def search(log, token, channel_id, timeout, logging):
 
         latest_message = loads(request.text)[0]
         
-        if latest_message["author"]["id"] == "270904126974590976":
+        if latest_message["author"]["id"] == "270904126974590976" and latest_message["referenced_message"]["author"]["id"] == ID:
             if logging["debug"]:
                 register(log, "DEBUG", "Got Dank Memer's response to command `pls search`.")
             break
         else:
-            continue
-       
+            continue 
+    
     if latest_message is None or latest_message["author"]["id"] != "270904126974590976":
         if logging["warning"]:
             register(log, "WARNING", f"Timeout exceeded for response from Dank Memer ({timeout} second(s)). Aborting command.")

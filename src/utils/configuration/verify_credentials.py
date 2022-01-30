@@ -1,4 +1,4 @@
-from json import load
+from json import load, loads
 from utils.logger import register
 from utils.console import style
 from requests import get
@@ -26,13 +26,15 @@ def verify_credentials(log, cwd):
     else:
         register(log, "DEBUG", "Verified presence of value `channel_id` in `credentials.json`.")
     
-    response = get("https://discord.com/api/v8/auth/login", headers={"Authorization": credentials["token"]})  
+    request = get("https://discord.com/api/v9/users/@me", headers={"Authorization": credentials["token"]})  
     
-    if response.status_code != 200:
+    if request.status_code != 200:
         register(log, "ERROR", "Deemed `token` as invalid. Please double-check you entered the right token in `configuration.json`.")
         _ = input(f"\n{style.Italic and style.Faint}Press ENTER to exit the program...{style.RESET_ALL}")
         exit(1)
     
-    register(log, "DEBUG", "Verified `token`.")
+    data = loads(request.text)
     
-    return credentials
+    register(log, "DEBUG", f"Logged in as {data['username']}#{data['discriminator']}.")
+    
+    return [credentials, data["id"]]

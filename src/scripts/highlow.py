@@ -3,7 +3,7 @@ from utils.logger import register
 from time import sleep
 from json import loads
 
-def highlow(log, token, channel_id, timeout, logging):
+def highlow(log, token, channel_id, timeout, logging, ID):
     request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls hl"})
     
     if request.status_code != 200:
@@ -28,7 +28,7 @@ def highlow(log, token, channel_id, timeout, logging):
 
         latest_message = loads(request.text)[0]
         
-        if latest_message["author"]["id"] == "270904126974590976":
+        if latest_message["author"]["id"] == "270904126974590976" and latest_message["referenced_message"]["author"]["id"] == ID:
             if logging["debug"]:
                 register(log, "DEBUG", "Got Dank Memer's response to command `pls highlow`.")
             break

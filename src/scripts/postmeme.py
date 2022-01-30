@@ -4,7 +4,7 @@ from time import sleep
 from json import loads
 from random import choice
 
-def postmeme(log, token, channel_id, timeout, logging, cwd, commands):
+def postmeme(log, token, channel_id, timeout, logging, cwd, commands, ID):
     request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls pm"})
     
     if request.status_code != 200:
@@ -29,7 +29,7 @@ def postmeme(log, token, channel_id, timeout, logging, cwd, commands):
 
         latest_message = loads(request.text)[0]
         
-        if latest_message["author"]["id"] == "270904126974590976":
+        if latest_message["author"]["id"] == "270904126974590976" and latest_message["referenced_message"]["author"]["id"] == ID:
             if logging["debug"]:
                 register(log, "DEBUG", "Got Dank Memer's response to command `pls postmeme`.")
             break
@@ -46,7 +46,7 @@ def postmeme(log, token, channel_id, timeout, logging, cwd, commands):
         
         if commands["auto_buy"]:
             from scripts.buy import buy
-            buy(log, token, channel_id, timeout, logging, "laptop", cwd)
+            buy(log, token, channel_id, timeout, logging, "laptop", cwd, ID)
             return
         elif logging["warning"]:
             register(log, "WARNING", "A laptop is required for the command `pls postmeme`. However, since `auto_buy` is set to false in the configuration file, the program will not buy one. Aborting command.")

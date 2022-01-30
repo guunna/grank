@@ -29,7 +29,12 @@ elif __file__:
 log = initialize_logger(cwd)
 
 config = verify_configuration(log, cwd)
-credentials = verify_credentials(log, cwd)
+temp = verify_credentials(log, cwd)
+
+credentials = temp[0]
+ID = temp[-1]
+
+del temp
 
 token = credentials["token"]
 channel_id = credentials["channel_id"]
@@ -87,7 +92,7 @@ while True:
     
     if config["commands"]["search"]:
         try:
-            search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+            search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], ID)
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls search` command: `{sys.exc_info()}`")
     
@@ -96,7 +101,7 @@ while True:
     
     if config["commands"]["highlow"]:
         try:
-            highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+            highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], ID)
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls highlow` command: `{sys.exc_info()}`")
     
@@ -105,7 +110,7 @@ while True:
     
     if config["commands"]["postmeme"]:
         try:
-            postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"])
+            postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"], ID)
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls postmeme` command: `{sys.exc_info()}`")
     
