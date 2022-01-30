@@ -123,6 +123,6 @@ while True:
         register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
 
     if cooldown >= 0:
-        pass
-    else:
         sleep(cooldown)
+    else:
+        pass
