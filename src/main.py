@@ -122,4 +122,7 @@ while True:
     if config["logging"]["debug"]:
         register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
 
-    sleep(cooldown)
+    if cooldown >= 0:
+        pass
+    else:
+        sleep(cooldown)
