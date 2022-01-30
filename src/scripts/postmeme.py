@@ -4,11 +4,12 @@ from time import sleep
 from json import loads
 from random import choice
 
-def postmeme(log, token, channel_id, timeout, logging, cwd, config):
+def postmeme(log, token, channel_id, timeout, logging, cwd, commands):
     request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls pm"})
     
-    if request.status_code != 200 and logging["warning"]:
-        register(log, "WARNING", f"Failed to send command `pls postmeme`. Status code: {request.status_code} (expected 200). Aborting command.")
+    if request.status_code != 200:
+        if logging["warning"]:
+            register(log, "WARNING", f"Failed to send command `pls postmeme`. Status code: {request.status_code} (expected 200). Aborting command.")
         return
     
     if logging["debug"]:
@@ -28,24 +29,26 @@ def postmeme(log, token, channel_id, timeout, logging, cwd, config):
 
         latest_message = loads(request.text)[0]
         
-        if latest_message["author"]["id"] == "270904126974590976" and logging["debug"]:
-            register(log, "DEBUG", "Got Dank Memer's response to command `pls postmeme`.")
+        if latest_message["author"]["id"] == "270904126974590976":
+            if logging["debug"]:
+                register(log, "DEBUG", "Got Dank Memer's response to command `pls postmeme`.")
             break
         else:
             continue
        
-    if (latest_message is None or latest_message["author"]["id"] != "270904126974590976") and logging["warning"]:
-        register(log, "WARNING", f"Timeout exceeded for response from Dank Memer ({timeout} second(s)). Aborting command.")
+    if latest_message is None or latest_message["author"]["id"] != "270904126974590976":
+        if logging["warning"]:
+            register(log, "WARNING", f"Timeout exceeded for response from Dank Memer ({timeout} second(s)). Aborting command.")
         return
     elif latest_message["content"] == "oi you need to buy a laptop in the shop to post memes":
         if logging["debug"]:
             register(log, "DEBUG", "User does not have item `laptop`. Buying laptop now.")
         
-        if config["auto_buy"]:
+        if commands["auto_buy"]:
             from scripts.buy import buy
             buy(log, token, channel_id, timeout, logging, "laptop", cwd)
             return
-        else:
+        elif logging["warning"]:
             register(log, "WARNING", "A laptop is required for the command `pls postmeme`. However, since `auto_buy` is set to false in the configuration file, the program will not buy one. Aborting command.")
             return
         
@@ -64,7 +67,8 @@ def postmeme(log, token, channel_id, timeout, logging, cwd, config):
     
     request = post(f"https://discord.com/api/v9/interactions", headers={"authorization": token}, json=data)
     
-    if (request.status_code == 200 or request.status_code == 204) and logging["debug"]:
-        register(log, "DEBUG", "Successfully interacted with button on Dank Memer's response to command `pls postmeme`.")
+    if request.status_code == 200 or request.status_code == 204:
+        if logging["debug"]:
+            register(log, "DEBUG", "Successfully interacted with button on Dank Memer's response to command `pls postmeme`.")
     elif logging["warning"]:
         register(log, "WARNING", f"Failed to interact with button on Dank Memer's response to command `pls postmeme`. Status code: {request.status_code} (expected 200 or 204).")

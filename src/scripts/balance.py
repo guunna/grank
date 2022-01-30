@@ -25,17 +25,19 @@ def balance(log, token, channel_id, timeout, logging):
         
         if request.status_code != 200:
             continue
-
+        
         latest_message = loads(request.text)[0]
         
-        if latest_message["author"]["id"] == "270904126974590976" and logging["debug"]:
-            register(log, "DEBUG", "Got Dank Memer's response to command `pls bal`.")
+        if latest_message["author"]["id"] == "270904126974590976" :
+            if logging["debug"]:
+                register(log, "DEBUG", "Got Dank Memer's response to command `pls bal`.")
             break
         else:
             continue
        
-    if (latest_message is None or latest_message["author"]["id"] != "270904126974590976") and logging["warning"]:
-        register(log, "WARNING", f"Timeout exceeded for response from Dank Memer ({timeout} second(s)). Aborting command.")
+    if latest_message is None or latest_message["author"]["id"] != "270904126974590976":
+        if logging["warning"]:
+            register(log, "WARNING", f"Timeout exceeded for response from Dank Memer ({timeout} second(s)). Aborting command.")
         return
         
     return [True, latest_message]

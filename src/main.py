@@ -25,57 +25,68 @@ if getattr(sys, "frozen", False):
     cwd = dirname(sys.executable)
 elif __file__:
     cwd = dirname(__file__)
-    
+
 log = initialize_logger(cwd)
-   
+
 config = verify_configuration(log, cwd)
 credentials = verify_credentials(log, cwd)
 
 token = credentials["token"]
 channel_id = credentials["channel_id"]
 
+del credentials
+
 while True:
     print("")
     
-    start = time()
+    
     
     if config["commands"]["daily"]:
         daily(log, token, channel_id, config["logging"], cwd)
     
     sleep(config["cooldowns"]["commands"])
     
+    
     if config["commands"]["beg"]:
         beg(log, token, channel_id, config["logging"])
-    
+        
+    start = time()
     sleep(config["cooldowns"]["commands"])
+    
     
     if config["commands"]["dig"]:
         dig(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"])    
 
+
     if config["commands"]["fish"]:
         fish(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"]) 
 
+
     if config["commands"]["hunt"]:
         hunt(log, token, channel_id, config["logging"])
     
     sleep(config["cooldowns"]["commands"]) 
-      
+    
+    
     if config["commands"]["search"]:
         search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
     
     sleep(config["cooldowns"]["commands"])
-       
+    
+    
     if config["commands"]["highlow"]:
         highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
     
     sleep(config["cooldowns"]["commands"])
     
+    v
     if config["commands"]["postmeme"]:
-        postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config)
+        postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"])
+    
     
     end = time()
     
@@ -83,5 +94,5 @@ while True:
     
     if config["logging"]["debug"]:
         register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
-        
+
     sleep(cooldown)
