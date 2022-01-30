@@ -34,7 +34,7 @@
     <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.png" alt="Cover image">
 </div>
 
-Grank is a feature-rich script that automatically grinds Dank Memer for you. It is based on [dankgrinder](https://github.com/dankgrinder/dankgrinder). Since it has been discontinued and the [recommended fork](https://github.com/V4NSH4J/dankgrinder) has also been discontinued, I decided to make my own version from scratch in Python.
+Grank is a feature-rich script that automatically grinds Dank Memer for you. It is inspired by [dankgrinder](https://github.com/dankgrinder/dankgrinder). Since dankgrinder has been discontinued and the [recommended fork](https://github.com/V4NSH4J/dankgrinder) has also been discontinued, I decided to make my own version from scratch in Python.
 
 ## Features
 - Free
