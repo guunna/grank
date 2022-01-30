@@ -40,50 +40,74 @@ while True:
     print("")
     
     if config["commands"]["daily"]:
-        daily(log, token, channel_id, config["logging"], cwd)
+        try:
+            daily(log, token, channel_id, config["logging"], cwd)
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls daily` command: `{sys.exc_info()}`")
     
     sleep(config["cooldowns"]["commands"])
     
     
     if config["commands"]["beg"]:
-        beg(log, token, channel_id, config["logging"])
+        try:
+            beg(log, token, channel_id, config["logging"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls beg` command: `{sys.exc_info()}`")
         
     start = time()
     sleep(config["cooldowns"]["commands"])
     
     
     if config["commands"]["dig"]:
-        dig(log, token, channel_id, config["logging"])
+        try:
+            dig(log, token, channel_id, config["logging"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls dig` command: `{sys.exc_info()}`")
     
     sleep(config["cooldowns"]["commands"])    
 
 
     if config["commands"]["fish"]:
-        fish(log, token, channel_id, config["logging"])
+        try:
+            fish(log, token, channel_id, config["logging"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls fish` command: `{sys.exc_info()}`")
     
     sleep(config["cooldowns"]["commands"]) 
 
 
     if config["commands"]["hunt"]:
-        hunt(log, token, channel_id, config["logging"])
+        try:
+            hunt(log, token, channel_id, config["logging"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls hunt` command: `{sys.exc_info()}`")
     
     sleep(config["cooldowns"]["commands"]) 
     
     
     if config["commands"]["search"]:
-        search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+        try:
+            search(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls search` command: `{sys.exc_info()}`")
     
     sleep(config["cooldowns"]["commands"])
     
     
     if config["commands"]["highlow"]:
-        highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+        try:
+            highlow(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls highlow` command: `{sys.exc_info()}`")
     
     sleep(config["cooldowns"]["commands"])
     
     
     if config["commands"]["postmeme"]:
-        postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"])
+        try:
+            postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"])
+        except Exception:
+            register(log, "WARNING", f"An unexpected error occured during the running of the `pls postmeme` command: `{sys.exc_info()}`")
     
     
     end = time()
