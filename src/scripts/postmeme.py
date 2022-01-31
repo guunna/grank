@@ -4,7 +4,7 @@ from time import sleep
 from json import loads
 from random import choice
 
-def postmeme(log, token, channel_id, timeout, logging, cwd, commands, ID):
+def postmeme(log, token, channel_id, timeout, logging, ID, cwd, commands):
     request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls pm"})
     
     if request.status_code != 200:

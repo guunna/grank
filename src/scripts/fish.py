@@ -4,7 +4,7 @@ from time import sleep
 from requests import get
 from json import loads
 
-def fish(log, token, channel_id, logging, timeout, ID, commands, cwd):
+def fish(log, token, channel_id, timeout, logging, ID, cwd, commands):
     request = post(f"https://discord.com/api/v8/channels/{channel_id}/messages", headers={"authorization": token}, data={"content": "pls fish"})
     
     if request.status_code != 200:

@@ -11,7 +11,7 @@
 </div>
 
 <div align="center">
-    <sub>Inspired by <a href="https://github.com/dankgrinder/dankgrinder">this</a> repository. This is a WIP and there will be more functions added in the future. Special thanks to <a href="https://github.com/V4NSH4J">V4NSH4J </a> for helping me solve lots of the problems I encountered.</sub>
+    <sub>Inspired by <a href="https://github.com/dankgrinder/dankgrinder">this</a> repository. This is a WIP and there will be more functions added in the future. Special thanks to <a href="https://github.com/V4NSH4J">V4NSH4J</a> for helping me solve lots of the problems I encountered.</sub>
 </div>
 
 ## Contents
@@ -31,7 +31,7 @@
 
 ## What is Grank?
 <div align="center">
-    <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.GIF" alt="Cover image">
+    <img src="https://media.githubusercontent.com/media/didlly/grank/main/assets/cover.GIF" alt="Cover image">
 </div>
 
 Grank is a feature-rich script that automatically grinds Dank Memer for you. It is inspired by [dankgrinder](https://github.com/dankgrinder/dankgrinder). Since dankgrinder has been discontinued and the [recommended fork](https://github.com/V4NSH4J/dankgrinder) has also been discontinued, I decided to make my own version from scratch in Python.

@@ -65,7 +65,7 @@ while True:
     
     if config["commands"]["dig"]:
         try:
-            dig(log, token, channel_id, config["logging"], config["cooldowns"]["timeout"], ID, config["commands"], cwd)
+            dig(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], ID, cwd, config["commands"])
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls dig` command: `{sys.exc_info()}`")
     
@@ -74,7 +74,7 @@ while True:
 
     if config["commands"]["fish"]:
         try:
-            fish(log, token, channel_id, config["logging"], config["cooldowns"]["timeout"], ID, config["commands"], cwd)
+            fish(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], ID, cwd, config["commands"])
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls fish` command: `{sys.exc_info()}`")
     
@@ -83,7 +83,7 @@ while True:
 
     if config["commands"]["hunt"]:
         try:
-            hunt(log, token, channel_id, config["logging"], config["cooldowns"]["timeout"], ID, config["commands"], cwd)
+            hunt(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], ID, cwd, config["commands"])
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls hunt` command: `{sys.exc_info()}`")
     
@@ -110,7 +110,7 @@ while True:
     
     if config["commands"]["postmeme"]:
         try:
-            postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], cwd, config["commands"], ID)
+            postmeme(log, token, channel_id, config["cooldowns"]["timeout"], config["logging"], ID, cwd, config["commands"])
         except Exception:
             register(log, "WARNING", f"An unexpected error occured during the running of the `pls postmeme` command: `{sys.exc_info()}`")
     
@@ -119,8 +119,6 @@ while True:
     
     cooldown = 45 - (end - start)
     
-
-
     if cooldown >= 0:
         if config["logging"]["debug"]:
             register(log, "DEBUG", f"Beginning {cooldown} second cooldown between command loop.")
