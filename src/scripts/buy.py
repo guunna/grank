@@ -41,7 +41,7 @@ def buy(log, token, channel_id, timeout, logging, item, cwd, ID):
         
     if latest_message["content"] == "Far out, you don't have enough money in your wallet or your bank to buy that much!!":
         from scripts.balance import balance
-        bal = balance()
+        bal = balance(log, token, channel_id, timeout, logging, ID)
         
         if bal[0]:
             bal = bal[-1]
