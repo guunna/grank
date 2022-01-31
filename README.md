@@ -31,13 +31,13 @@
 
 ## What is Grank?
 <div align="center">
-    <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.png" alt="Cover image">
+    <img src="https://raw.githubusercontent.com/didlly/grank/main/assets/cover.GIF" alt="Cover image">
 </div>
 
 Grank is a feature-rich script that automatically grinds Dank Memer for you. It is inspired by [dankgrinder](https://github.com/dankgrinder/dankgrinder). Since dankgrinder has been discontinued and the [recommended fork](https://github.com/V4NSH4J/dankgrinder) has also been discontinued, I decided to make my own version from scratch in Python.
 
 ## Features
-- Free
+- Supports multi-instancing.
 - Efficiently coded.
 - Smart - if the user doesn't have a required item to run a command like ```pls pm```, it will buy the required item so long as there are sufficient funds in the user's wallet & bank.
 

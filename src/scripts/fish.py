@@ -16,9 +16,7 @@ def fish(log, token, channel_id, logging, timeout, ID, commands, cwd):
         register(log, "DEBUG", "Successfully sent command `pls fish`.")
         
     latest_message = None
-    
-    sleep(2)
-    
+      
     for _ in range(0, timeout):
         sleep(1)
         

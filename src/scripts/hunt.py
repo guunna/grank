@@ -17,8 +17,6 @@ def hunt(log, token, channel_id, logging, timeout, ID, commands, cwd):
         
     latest_message = None
     
-    sleep(2)
-    
     for _ in range(0, timeout):
         sleep(1)
         

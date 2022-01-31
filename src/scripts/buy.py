@@ -17,8 +17,6 @@ def buy(log, token, channel_id, timeout, logging, item, cwd, ID):
     
     latest_message = None
     
-    sleep(2)
-    
     for _ in range(0, timeout):
         sleep(1)
         

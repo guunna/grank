@@ -15,8 +15,6 @@ def balance(log, token, channel_id, timeout, logging, ID):
     
     latest_message = None
     
-    sleep(2)
-    
     for _ in range(0, timeout):
         sleep(1)
         

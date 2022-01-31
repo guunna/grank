@@ -17,8 +17,6 @@ def postmeme(log, token, channel_id, timeout, logging, cwd, commands, ID):
     
     latest_message = None
     
-    sleep(2)
-    
     for _ in range(0, timeout):
         sleep(1)
         
